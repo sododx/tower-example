@@ -1,8 +1,10 @@
 ---
 - name: Hello World!
   hosts: all
- 
+  roles:
+  - yatesr.timezone
+  vars:
+    timezone: UTC
   tasks:
- 
   - name: Hello World!
     shell: echo "Hi! Tower is working."
